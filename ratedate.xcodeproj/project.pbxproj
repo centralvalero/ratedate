@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20D63F8F1863A92D0098549C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D63F8E1863A92D0098549C /* FacebookSDK.framework */; };
+		20FC4A0B1884538F00F78BC7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC4A0A1884538F00F78BC7 /* LoginViewController.m */; };
 		C362D3F5185F892800D17AD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C362D3F4185F892800D17AD4 /* Foundation.framework */; };
 		C362D3F7185F892800D17AD4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C362D3F6185F892800D17AD4 /* CoreGraphics.framework */; };
 		C362D3F9185F892800D17AD4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C362D3F8185F892800D17AD4 /* UIKit.framework */; };
@@ -34,7 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C362D3F1185F892800D17AD4 /* ratedate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ratedate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D63F8E1863A92D0098549C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		20FC4A0518844D2D00F78BC7 /* ratedate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ratedate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20FC4A0618844D2D00F78BC7 /* ratedateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ratedateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20FC4A091884538F00F78BC7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		20FC4A0A1884538F00F78BC7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		C362D3F4185F892800D17AD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C362D3F6185F892800D17AD4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C362D3F8185F892800D17AD4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -48,7 +54,6 @@
 		C362D409185F892800D17AD4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C362D40A185F892800D17AD4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C362D40C185F892800D17AD4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C362D412185F892800D17AD4 /* ratedateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ratedateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C362D413185F892800D17AD4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C362D41B185F892800D17AD4 /* ratedateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ratedateTests-Info.plist"; sourceTree = "<group>"; };
 		C362D41D185F892800D17AD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -61,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C362D3F7185F892800D17AD4 /* CoreGraphics.framework in Frameworks */,
+				20D63F8F1863A92D0098549C /* FacebookSDK.framework in Frameworks */,
 				C362D3F9185F892800D17AD4 /* UIKit.framework in Frameworks */,
 				C362D3F5185F892800D17AD4 /* Foundation.framework in Frameworks */,
 			);
@@ -85,22 +91,15 @@
 				C362D3FA185F892800D17AD4 /* ratedate */,
 				C362D419185F892800D17AD4 /* ratedateTests */,
 				C362D3F3185F892800D17AD4 /* Frameworks */,
-				C362D3F2185F892800D17AD4 /* Products */,
+				20FC4A0518844D2D00F78BC7 /* ratedate.app */,
+				20FC4A0618844D2D00F78BC7 /* ratedateTests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		C362D3F2185F892800D17AD4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C362D3F1185F892800D17AD4 /* ratedate.app */,
-				C362D412185F892800D17AD4 /* ratedateTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		C362D3F3185F892800D17AD4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				20D63F8E1863A92D0098549C /* FacebookSDK.framework */,
 				C362D3F4185F892800D17AD4 /* Foundation.framework */,
 				C362D3F6185F892800D17AD4 /* CoreGraphics.framework */,
 				C362D3F8185F892800D17AD4 /* UIKit.framework */,
@@ -119,6 +118,8 @@
 				C362D40A185F892800D17AD4 /* ViewController.m */,
 				C362D40C185F892800D17AD4 /* Images.xcassets */,
 				C362D3FB185F892800D17AD4 /* Supporting Files */,
+				20FC4A091884538F00F78BC7 /* LoginViewController.h */,
+				20FC4A0A1884538F00F78BC7 /* LoginViewController.m */,
 			);
 			path = ratedate;
 			sourceTree = "<group>";
@@ -169,7 +170,7 @@
 			);
 			name = ratedate;
 			productName = ratedate;
-			productReference = C362D3F1185F892800D17AD4 /* ratedate.app */;
+			productReference = 20FC4A0518844D2D00F78BC7 /* ratedate.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C362D411185F892800D17AD4 /* ratedateTests */ = {
@@ -187,7 +188,7 @@
 			);
 			name = ratedateTests;
 			productName = ratedateTests;
-			productReference = C362D412185F892800D17AD4 /* ratedateTests.xctest */;
+			productReference = 20FC4A0618844D2D00F78BC7 /* ratedateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +214,7 @@
 				Base,
 			);
 			mainGroup = C362D3E8185F892700D17AD4;
-			productRefGroup = C362D3F2185F892800D17AD4 /* Products */;
+			productRefGroup = C362D3E8185F892700D17AD4;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -249,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20FC4A0B1884538F00F78BC7 /* LoginViewController.m in Sources */,
 				C362D40B185F892800D17AD4 /* ViewController.m in Sources */,
 				C362D405185F892800D17AD4 /* AppDelegate.m in Sources */,
 				C362D401185F892800D17AD4 /* main.m in Sources */,
@@ -381,6 +383,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/FValero/Documents/FacebookSDK,
+					"/Users/Evan/Site/ios-projects/ratedate",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ratedate/ratedate-Prefix.pch";
@@ -398,6 +401,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/FValero/Documents/FacebookSDK,
+					"/Users/Evan/Site/ios-projects/ratedate",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ratedate/ratedate-Prefix.pch";
